@@ -1,19 +1,32 @@
-# Applying MAST to a real production agent platform
+# Applying MAST to a real closed-alpha agent platform
 
 An honest failure-mode analysis of **639,381 execution steps** from **23,624
-runs** of a production autonomous-agent platform, over five months — applying the
-**MAST** failure taxonomy (Cemri et al. 2025) to deployed agents rather than
+runs** on a closed-alpha autonomous-agent platform, over five months — applying
+the **MAST** failure taxonomy (Cemri et al. 2025) to deployed agents rather than
 benchmark tasks.
 
 This repo contains the aggregate results and the analysis code. It deliberately
-contains **no trajectory text** — only de-identified aggregates — because the
-underlying data is production telemetry from real agents doing real work.
+contains **no trajectory text** — only de-identified aggregates.
 
 > **MAST** — *Multi-Agent System Failure Taxonomy*, 14 failure modes in 3
 > categories, from Cemri et al. 2025 ([arXiv:2503.13657](https://arxiv.org/abs/2503.13657)),
 > built from 1,600+ annotated **benchmark** traces (human inter-annotator kappa
 > 0.88). The taxonomy and dataset are theirs. This work applies their taxonomy to
-> a new subject: a deployed agent platform's own logs.
+> a new subject: a deployed platform's production logs.
+
+## Scope & data provenance (read this)
+
+The dataset is the telemetry of a **closed-alpha agent platform**, spanning all
+of its workspaces (the operating lab's own agents and early-alpha workspaces) —
+not a single team's agents. The operating lab's own roster is the **largest
+single cohort** and the **heaviest user of agent-to-agent coordination** (a
+slight majority of all A2A runs), but the platform-wide totals include other
+early-alpha workspaces. Numbers are reported at the **platform** level except
+where explicitly noted.
+
+Everything published here is **aggregate** (counts, rates, distributions) — no
+trajectory text, no identifiers, no per-workspace breakdowns. The analysis was
+run by the platform operator over its own closed-alpha system.
 
 ---
 
