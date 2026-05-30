@@ -1,0 +1,58 @@
+{
+  "n_steps": 639429,
+  "n_runs": 23624,
+  "status_distribution": {
+    "completed": 633188,
+    "failed": 3304,
+    "running": 2937
+  },
+  "type_distribution": {
+    "tool_call": 323249,
+    "reasoning": 266082,
+    "system_prompt": 24561,
+    "observation": 24248,
+    "text": 937,
+    "resume_event": 192,
+    "pause_event": 160
+  },
+  "tool_call_status": {
+    "completed": 317024,
+    "failed": 3294,
+    "running": 2931
+  },
+  "tool_call_failure_rate": 0.0102,
+  "tool_call_stuck_running_rate": 0.0091,
+  "reasoning_status": {
+    "completed": 266068,
+    "failed": 10,
+    "running": 4
+  },
+  "steps_per_run": {
+    "min": 1,
+    "median": 15,
+    "p95": 76,
+    "p99": 162,
+    "max": 1641,
+    "mean": 27.1
+  },
+  "runs_with_at_least_one_failure": 1810,
+  "run_failure_rate": 0.0766,
+  "tokens": {
+    "input_total": 6682329991,
+    "output_total": 63367378
+  },
+  "cost_usd_total": 7803.64,
+  "cost_rows": 223053,
+  "duration_ms": {
+    "count": 402722,
+    "median": 3802.0,
+    "p95": 16225.0,
+    "p99": 39860.0,
+    "max": 935373.0
+  },
+  "failed_tool_call_duration_ms": {
+    "count": 0,
+    "median": 0.0,
+    "p95": 0.0
+  }
+}

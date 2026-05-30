@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+# Never commit raw telemetry to the public repo
+*.jsonl
+data/*_full.json

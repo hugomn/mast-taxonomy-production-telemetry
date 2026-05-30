@@ -1,0 +1,32 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "runs_measured": 50,
+  "pricing_usd_per_1m": {
+    "input": 1.0,
+    "output": 5.0
+  },
+  "latency_seconds": {
+    "mean": 3.46,
+    "p50": 3.12,
+    "p95": 5.46,
+    "max": 6.24
+  },
+  "tokens_per_run": {
+    "input_mean": 2030,
+    "output_mean": 231,
+    "input_p95": 4791
+  },
+  "cost_usd_per_run": {
+    "mean": 0.0032,
+    "p95": 0.0062
+  },
+  "throughput": {
+    "wall_seconds": 173.2,
+    "runs_per_minute_sequential": 17.3
+  },
+  "projections": {
+    "cost_all_23624_runs_usd": 75.23,
+    "cost_per_1000_runs_usd": 3.18,
+    "daily_cost_at_150_runs_usd": 0.48
+  }
+}

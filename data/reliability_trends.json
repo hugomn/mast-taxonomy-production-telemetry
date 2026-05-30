@@ -1,0 +1,53 @@
+{
+  "monthly_reliability": [
+    {
+      "month": "2025-12",
+      "runs": 1899,
+      "pct_runs_with_failure": 0.7,
+      "pct_complete_cycle_hang": 0.0
+    },
+    {
+      "month": "2026-01",
+      "runs": 2756,
+      "pct_runs_with_failure": 12.3,
+      "pct_complete_cycle_hang": 47.1
+    },
+    {
+      "month": "2026-02",
+      "runs": 1930,
+      "pct_runs_with_failure": 14.6,
+      "pct_complete_cycle_hang": 4.9
+    },
+    {
+      "month": "2026-03",
+      "runs": 4516,
+      "pct_runs_with_failure": 14.5,
+      "pct_complete_cycle_hang": 0.0
+    },
+    {
+      "month": "2026-04",
+      "runs": 5679,
+      "pct_runs_with_failure": 8.7,
+      "pct_complete_cycle_hang": 1.0
+    },
+    {
+      "month": "2026-05",
+      "runs": 7214,
+      "pct_runs_with_failure": 0.4,
+      "pct_complete_cycle_hang": 0.0
+    }
+  ],
+  "cost_of_failure": {
+    "total_spend_usd": 7820.43,
+    "spend_on_problem_runs_usd": 1111.64,
+    "pct_of_spend_on_problem_runs": 14.2,
+    "problem_runs": 3654,
+    "total_runs": 23994,
+    "avg_cost_clean_run_usd": 0.3298,
+    "avg_cost_problem_run_usd": 0.3042,
+    "avg_steps_clean": 22.0,
+    "avg_steps_problem": 53.0,
+    "interpretation": "Failures waste EFFORT more than MONEY: problem runs use ~2.4x the steps of clean runs for no completed outcome, yet cost about the same per run because they fail on cheap tool calls, not expensive tokens."
+  },
+  "headline": "The platform matured: failure rate fell from ~14%% (Feb-Mar) to under 1%% (May) while run volume grew several-fold. The Jan complete_cycle hang is visible as a one-month spike and is excluded from behavioural claims (see data_exclusions.json)."
+}

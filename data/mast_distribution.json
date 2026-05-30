@@ -1,0 +1,120 @@
+{
+  "n_runs_judged": 376,
+  "primary_mode_overall_RAW_stratified": {
+    "none": 208,
+    "1.1": 52,
+    "3.1": 38,
+    "3.2": 23,
+    "3.3": 22,
+    "1.3": 16,
+    "1.5": 5,
+    "1.4": 4,
+    "2.6": 3,
+    "2.5": 2,
+    "2.2": 1,
+    "2.4": 1,
+    "parse_error": 1
+  },
+  "primary_mode_by_stratum": {
+    "healthy": {
+      "none": 112,
+      "1.3": 3,
+      "3.2": 2,
+      "2.6": 1,
+      "1.5": 1,
+      "1.4": 1
+    },
+    "long": {
+      "none": 22,
+      "1.1": 10,
+      "3.2": 7,
+      "3.3": 6,
+      "1.3": 6,
+      "parse_error": 1
+    },
+    "failed": {
+      "none": 62,
+      "1.1": 41,
+      "3.1": 16,
+      "3.3": 15,
+      "3.2": 13,
+      "1.3": 6,
+      "1.4": 3,
+      "2.6": 2,
+      "1.5": 2,
+      "2.2": 1,
+      "2.4": 1,
+      "2.5": 1
+    },
+    "stuck": {
+      "3.1": 22,
+      "none": 12,
+      "1.5": 2,
+      "1.3": 1,
+      "2.5": 1,
+      "3.3": 1,
+      "3.2": 1,
+      "1.1": 1
+    }
+  },
+  "judge_failure_rate_by_stratum": {
+    "healthy": {
+      "n": 120,
+      "is_failure": 5,
+      "rate": 0.042
+    },
+    "long": {
+      "n": 52,
+      "is_failure": 27,
+      "rate": 0.519
+    },
+    "failed": {
+      "n": 163,
+      "is_failure": 100,
+      "rate": 0.613
+    },
+    "stuck": {
+      "n": 41,
+      "is_failure": 29,
+      "rate": 0.707
+    }
+  },
+  "mode_cooccurrence_pairs": {
+    "1.1+3.2": 40,
+    "1.1+2.6": 37,
+    "1.1+3.3": 29,
+    "2.6+3.2": 26,
+    "1.1+3.1": 24,
+    "1.3+3.2": 18,
+    "2.6+3.3": 18,
+    "1.1+2.2": 15,
+    "1.5+3.1": 15,
+    "2.6+3.1": 15,
+    "1.3+2.6": 13,
+    "3.2+3.3": 10,
+    "3.1+3.2": 9,
+    "1.1+1.3": 6,
+    "2.2+3.1": 5,
+    "1.3+3.3": 5,
+    "1.1+1.5": 4,
+    "1.4+3.1": 4,
+    "1.4+2.6": 4,
+    "1.5+2.6": 4
+  },
+  "population_reweighted_primary_share": {
+    "none": 0.8301,
+    "3.1": 0.0523,
+    "1.3": 0.0269,
+    "1.1": 0.0245,
+    "3.2": 0.0237,
+    "1.5": 0.0119,
+    "3.3": 0.0107,
+    "1.4": 0.0084,
+    "2.6": 0.0079,
+    "2.5": 0.0025,
+    "2.2": 0.0005,
+    "2.4": 0.0005,
+    "parse_error": 0.0002
+  },
+  "reweighting_note": "RAW counts over-represent failures by design (stratified sample). population_reweighted_primary_share maps each stratum's judged mode shares back onto its true population (covered 22305/23624 runs) for a production-realistic estimate. The ~1300 runs outside all strata (very short / odd-length) are not covered and not extrapolated."
+}

@@ -1,0 +1,27 @@
+{
+  "k_folds": 5,
+  "n_traces": 63,
+  "n_modes": 10,
+  "seed": 20260530,
+  "methods": {
+    "majority": {
+      "heldout_accuracy": 0.0794,
+      "heldout_macro_f1": 0.0257
+    },
+    "agent_bench": {
+      "heldout_accuracy": 0.0952,
+      "heldout_macro_f1": 0.057
+    },
+    "keyword_tfidf": {
+      "heldout_accuracy": 0.127,
+      "heldout_macro_f1": 0.0991
+    }
+  },
+  "caveats": {
+    "in_sample": false,
+    "singleton_modes": [
+      "2.4"
+    ],
+    "note": "Stratified 5-fold CV on a curated, stratified 63-trace subset of the public MAST dataset (Cemri et al. 2025). Small-N: mode(s) ['2.4'] have a single example, so per-fold class coverage is incomplete; macro-F1 is depressed accordingly and is honest about it. Not a claim about arbitrary new traces."
+  }
+}

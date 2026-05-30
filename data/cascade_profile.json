@@ -1,0 +1,24 @@
+{
+  "n_runs": 473,
+  "runs_with_any_failed_step": 180,
+  "cascade_primitives": {
+    "error_then_retry_same_tool": 231,
+    "error_then_stuck_terminal_hang": 28,
+    "recovered_after_error": 267
+  },
+  "runaway_runs_ge8_same_action": 135,
+  "repetition_runs_ge4_same_action": 234,
+  "top_failing_tools": {
+    "shell": 100,
+    "read_file": 25,
+    "supabase": 20,
+    "record_goal_progress": 19,
+    "notion": 16,
+    "query_data": 14,
+    "goals": 10,
+    "edit_file": 10,
+    "alpaca": 9,
+    "linear": 9
+  },
+  "interpretation": "recovered_after_error counts runs where a tool error is followed by a different successful call and a clean finish \u2014 these are NOT run-level failures and explain why a naive 'any failed step = failure' classifier over-counts. error_then_stuck is the dangerous cascade: a tool problem followed by a terminal hang that never completes."
+}

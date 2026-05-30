@@ -1,0 +1,32 @@
+{
+  "model": "claude-opus-4-8",
+  "runs_measured": 50,
+  "pricing_usd_per_1m": {
+    "input": 15.0,
+    "output": 75.0
+  },
+  "latency_seconds": {
+    "mean": 3.9,
+    "p50": 3.6,
+    "p95": 5.86,
+    "max": 7.11
+  },
+  "tokens_per_run": {
+    "input_mean": 2795,
+    "output_mean": 204,
+    "input_p95": 6583
+  },
+  "cost_usd_per_run": {
+    "mean": 0.0572,
+    "p95": 0.1159
+  },
+  "throughput": {
+    "wall_seconds": 195.3,
+    "runs_per_minute_sequential": 15.4
+  },
+  "projections": {
+    "cost_all_23624_runs_usd": 1352.22,
+    "cost_per_1000_runs_usd": 57.24,
+    "daily_cost_at_150_runs_usd": 8.59
+  }
+}
