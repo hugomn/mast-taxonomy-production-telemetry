@@ -28,6 +28,15 @@ Everything published here is **aggregate** (counts, rates, distributions) — no
 trajectory text, no identifiers, no per-workspace breakdowns. The analysis was
 run by the platform operator over its own closed-alpha system.
 
+**Privacy.** The raw telemetry contains real content (it is production data) and
+**never leaves the operator's environment** — it is not in this repository or its
+history. What's published is strictly derived aggregates: integer counts, rates,
+percentages, MAST mode codes, and the analysis code. There are **no names, email
+addresses, repository paths, dollar figures, or any personal data** in any
+committed file (verified by exhaustive scan of every file and the full git
+history). If you find anything that looks like it shouldn't be here, please open
+an issue.
+
 ---
 
 ## Why this is worth doing
